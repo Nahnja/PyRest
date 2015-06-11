@@ -46,6 +46,3 @@ class PyRest():
 
     def __getitem__(self, key):
         return self.create_pending_call()[key]
-
-
-# http://api.openweathermap.org/data/2.5/weather?q=London,uk

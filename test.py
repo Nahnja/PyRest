@@ -19,7 +19,7 @@ class TestPyRest(unittest.TestCase):
         return PendingCall(
           self.url,
           username=self.username,
-          password="__{}".format(self.password)
+          password="__{}".format(self.password),
         )
 
     call = SubRest("http://test.com", "john", "pass").model.view["1"]
